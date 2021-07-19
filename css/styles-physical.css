@@ -32,6 +32,10 @@
     --gray10: #616161;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--gray30);
     /* font-family: charter; */
@@ -42,6 +46,14 @@ body {
 header {
     font-size: 14px;
     color: var(--gray10);
+    position: absolute;
+    width: 188px;
+    top: 64px;
+    left: -222px;
+}
+
+header li {
+    margin-bottom: 16px;
 }
 
 header a {
@@ -55,6 +67,7 @@ header a:hover {
 
 nav details summary {
     font-weight: bold;
+    line-height: 24px;
 }
 
 a {
@@ -63,6 +76,7 @@ a {
 
 h1 {
     font-size: 60px;
+    font-weight: normal;
     margin-top: 64px;
     margin-bottom: 16px;
 }
@@ -87,6 +101,9 @@ h3 {
     font-weight: normal;
     margin-top: 16px;
     margin-bottom: 24px;
+    position: sticky;
+    top: 0;
+    background: white;
 }
 
 pre {
@@ -98,8 +115,10 @@ pre {
 
 blockquote {
     font-size: 24px;
+    line-height: 24px;
     margin: 32px 0;
     padding-left: 16px;
+    border-left: 4px solid var(--gray30);
 }
 
 blockquote span {
@@ -108,6 +127,20 @@ blockquote span {
 
 blockquote span::before {
     content: "-";
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.header-content {
+    position: relative;
+}
+
+.wrapper {
+    width: 882px;
+    margin: auto;
 }
 
 .hero {
@@ -146,7 +179,7 @@ blockquote span::before {
 
 .section-content h3 {
     counter-increment: titleList;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -155,8 +188,11 @@ blockquote span::before {
 
 .section-content h3::after {
     content: "";
-    width: 32px;
+    width: 80px;
     height: 4px;
     background-color: var(--gray30);
     display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
