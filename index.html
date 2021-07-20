@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles-logical.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="hero"></div>
@@ -59,7 +59,7 @@
           <section class="section-content">
             <h2>Setup</h2>
             <img
-              src="./images/google-chrome.png"
+              src="./images/google-chrome-light.png"
               alt="Logo de Google Chrome"
               title="Logo de Google Chrome"
             />
@@ -70,7 +70,7 @@
               amigable uso.
             </p>
             <img
-              src="./images/visual-studio-code.png"
+              src="./images/visual-studio-code-light.png"
               alt="Logo de Visual Studio Code"
               title="Logo de Visual Studio Code"
             />
@@ -81,7 +81,7 @@
               plugins lo hace el complemento perfecto para cualquier programador sin
               importar el lenguaje en el que se desemvuelva.
             </p>
-            <img src="./images/figma.png" alt="Logo de Figma" title="Logo de Figma" />
+            <img src="./images/figma-light.png" alt="Logo de Figma" title="Logo de Figma" />
             <h3 id="figma">Figma</h3>
             <p>
               Figma es una la herramienta más popular en la actualidad para entregar
@@ -89,7 +89,7 @@
               porque puede ser usado directamente desde el navegador.
             </p>
             <img
-              src="./images/github.png"
+              src="./images/github-light.png"
               alt="Logo de GitHub"
               title="Logo de GitHub"
             />
@@ -122,18 +122,18 @@
               contenido.
             </p>
             <pre>
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang=&quot;es&quot;&gt;
-    &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot; /&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
     
-    &lt;/body&gt;
-    &lt;/html&gt;
+&lt;/body&gt;
+&lt;/html&gt;
     </pre>
             <h3 id="etiquetas">Etiquetas</h3>
             <p>
@@ -159,7 +159,6 @@
             </p>
             <img
               src="./images/dom.png"
-              style="width: 900px; height: 470px"
               alt="Diagrama que explica la estructura del DOM"
             />
             <h3 id="semantica">Semántica</h3>
@@ -189,7 +188,6 @@
             </p>
             <img
               src="./images/css.png"
-              style="width: 900px"
               alt="Representación artística de lo que es CSS"
             />    
           </section>
@@ -234,8 +232,28 @@
                 | padding-inline-start | padding-inline-end
               </li>
             </ul>
-            <h3>Modelo de caja</h3>
           </section>
+          <div class="section-content">
+            <h2>Canal de Youtube: Leonidas Esteban</h2>
+            <div class="slider">
+              <scroll-container class="slider-container">
+                <scroll-page class="slider-slide" id="video-1">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-2">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/_tniWgtqj_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-3">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6GTNNSuaToo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </scroll-page>
+              </scroll-container>
+              <div class="slider-bullet-list">
+                <a href="#video-1" class="slider-bullet"></a>
+                <a href="#video-2" class="slider-bullet"></a>
+                <a href="#video-3" class="slider-bullet"></a>
+              </div>
+            </div>
+          </div>
           <p>
             Sí tienes alguna pregunta escríbeme a
             <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>

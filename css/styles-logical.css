@@ -38,15 +38,31 @@ body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Nunito', sans-serif;
     background: #251F24;
+    margin: 0;
+}
+
+.header {
+    position: sticky;
+    inset-block-start: -45px;
+}
+
+.header-content {
+    position: relative;
+    inset-block-start: 65px;
 }
 
 header {
     font-size: 14px;
     color: var(--white30);
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -208px;
+    inline-size: 188px;
 }
 
 header li {
     color: var(--white20);
+    margin-block-end: 16px;
 }
 
 header a {
@@ -66,24 +82,51 @@ a {
     color: var(--white30);
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
     font-weight: normal;
-}
+} */
 
 h1 {
     font-size: 60px;
+    margin-block-start: 64px;
+    margin-block-end: 16px;
 }
 
 h2 {
     font-size: 2em;
+    margin-block: 40px;
 }
 
 h3 {
     font-size: 1.5em;
+    font-weight: 600;
+    margin-block: 16px;
+}
+
+hr {
+    margin-block: 40px;
+    border: 1px solid rgba(97, 97, 97, 0.2);
 }
 
 pre {
     background: var(--white10);
+    padding: 40px;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+blockquote {
+    background: var(--white10);
+    border-radius: 8px;
+    padding: 24px;
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+blockquote p {
+    color: var(--white30);
 }
 
 p {
@@ -95,6 +138,12 @@ p {
     height: 350px;
 }
 
+.section-content img {
+    max-inline-size: 100%;
+    margin-block-start: 40px;
+    display: block;
+}
+
 .section-content {
     counter-reset: titleList;
 }
@@ -104,13 +153,62 @@ p {
 }
 
 .section-content h3::before {
-    content: counter(titleList);
+    content: counter(titleList)'. ';
 }
 
-.section-content h3::after {
+/* .section-content h3::after {
     content: "";
     width: 32px;
     height: 4px;
     background-color: var(--white30);
     display: inline-block;
+} */
+
+.section-content + hr {
+    display: none;
+}
+
+.wrapper {
+    max-inline-size: 902px;
+    margin: auto;
+}
+
+.main-content {
+    padding-inline: 16px;
+}
+
+.slider {
+    /* border: 1px solid red; */
+}
+
+.slider-container {
+    /* block-size: 100px; */
+    display: block;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+    /* border: 1px solid purple; */
+}
+
+.video {
+    margin: 0;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white;
+    border-radius: 50%;
 }
