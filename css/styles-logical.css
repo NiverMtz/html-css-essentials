@@ -42,22 +42,16 @@ body {
 }
 
 .header {
-    position: sticky;
-    inset-block-start: -45px;
 }
 
 .header-content {
-    position: relative;
-    inset-block-start: 65px;
+    padding-inline: 20px    ;
 }
 
 header {
+    margin-block-start: 20px;
     font-size: 14px;
     color: var(--white30);
-    position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: -208px;
-    inline-size: 188px;
 }
 
 header li {
@@ -87,8 +81,8 @@ a {
 } */
 
 h1 {
-    font-size: 60px;
-    margin-block-start: 64px;
+    font-size: 40px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
 }
 
@@ -135,7 +129,7 @@ p {
 
 .hero {
     background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-    height: 350px;
+    block-size: 50px;
 }
 
 .section-content img {
@@ -211,4 +205,57 @@ p {
     block-size: 15px;
     background: white;
     border-radius: 50%;
+}
+
+.form input {
+    inline-size: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--white30);
+    background: #251F24;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--white30);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input::-webkit-input-placeholder {
+    color: var(--white20);
+}
+
+.form input[type="submit"] {
+    background: #157efb;
+    border: none;
+}
+
+@media screen and (min-width: 1366px) {
+    .header {
+        position: sticky;
+        inset-block-start: -45px;
+    }
+    
+    .header-content {
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline: 0;
+    }
+
+    .hero {
+        block-size: 350px;
+    }
+    
+    header {
+        font-size: 14px;
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
 }
