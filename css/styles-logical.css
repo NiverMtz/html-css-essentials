@@ -27,29 +27,35 @@
 }
 
 :root {
-    --gray30: #212121;
-    --gray20: #212429;
-    --gray10: #616161;
+    --white30: white;
+    --white20: #A5A3A5;
+    --white10: #3A3539;
 }
 
 body {
-    color: var(--gray30);
+    color: var(--white30);
     /* font-family: charter; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    background: #251F24;
 }
 
 header {
     font-size: 14px;
-    color: var(--gray10);
+    color: var(--white30);
+}
+
+header li {
+    color: var(--white20);
 }
 
 header a {
-    color: var(--gray10)    ; 
+    color: var(--white20)    ; 
     text-decoration: none;
 }
 
 header a:hover {
-    color: var(--gray30);
+    color: var(--white30);
 }
 
 nav details summary {
@@ -57,7 +63,11 @@ nav details summary {
 }
 
 a {
-    color: var(--gray30);
+    color: var(--white30);
+}
+
+h1, h2, h3 {
+    font-weight: normal;
 }
 
 h1 {
@@ -73,11 +83,15 @@ h3 {
 }
 
 pre {
-    background: #FEC62E;
+    background: var(--white10);
+}
+
+p {
+    color: var(--white20);
 }
 
 .hero {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url(../images/patron-1.png);
+    background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
     height: 350px;
 }
 
@@ -97,6 +111,6 @@ pre {
     content: "";
     width: 32px;
     height: 4px;
-    background-color: var(--gray30);
+    background-color: var(--white30);
     display: inline-block;
 }
