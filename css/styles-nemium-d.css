@@ -26,6 +26,8 @@
     font-weight: bold;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 :root {
     --gray30: #212121;
     --gray20: #212429;
@@ -40,7 +42,7 @@
 body {
     color: var(--gray30);
     /* font-family: charter; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin: 0;
 }
 
@@ -57,7 +59,7 @@ body {
     padding-inline: 20px;
 }
 
-h1,h2,h3 {
+h1,h2,h3,p {
     text-align: center;
 }
 
@@ -129,7 +131,7 @@ header nav li {
 }
 
 header nav li:hover {
-    width: 100%;
+    /* width: 150%; */
     height: 40px;
     background-color: #5551FF;
 }
@@ -153,7 +155,7 @@ a {
 
 h1 {
     font-size: 24px;
-    font-weight: normal;
+    font-weight: bold;
     margin-top: 64px;
     margin-bottom: 16px;
 }
@@ -184,7 +186,9 @@ h3 {
 }
 
 pre {
-    background: #FEC62E;
+    border: 8px solid #5551ff;
+    border-radius: 8px;
+    box-shadow: -10px 10px 0px #ABAAF6;
     padding: 40px;
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
@@ -384,6 +388,10 @@ blockquote span::before {
     gap: 22px;
 }
 
+.footer .footer-icons img {
+    margin: unset;
+}
+
 @media screen and (min-width: 1366px) {
     .header {
         position: sticky;
@@ -407,7 +415,7 @@ blockquote span::before {
         font-size: 14px;
         position: absolute;
         inset-block-start: 0;
-        inset-inline-start: -208px;
+        inset-inline-start: 908px;
         inline-size: 188px;
         /* border: 1px solid blue; */
         height: 65vh;
@@ -441,6 +449,10 @@ blockquote span::before {
     h1 {
         font-size: 60px;
         margin-block-start: 64px;
+    }
+
+    .section-content h3 {
+        margin-top: 40px;
     }
 
     .form input {
