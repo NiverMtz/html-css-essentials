@@ -191,6 +191,12 @@ blockquote span::before {
     position: relative;
 } */
 
+#google-chrome + p > span, 
+#visual-studio + p > span,
+#figma + p > span {
+    font-weight: bold;
+}
+
 #header1 {
     display: none;
 }

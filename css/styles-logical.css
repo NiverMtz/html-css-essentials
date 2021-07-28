@@ -166,6 +166,12 @@ p {
     color: var(--white20);
 }
 
+#google-chrome + p > span, 
+#visual-studio + p > span,
+#figma + p > span {
+    font-weight: bold;
+}
+
 #header2 {
     display: none;
 }

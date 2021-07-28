@@ -219,6 +219,10 @@ blockquote span::before {
 .header-content {
     position: relative;
 } */
+#google-chrome + p > span,
+#figma + p > span {
+    color: #5551FF;
+}
 
 #header2 {
     display: none;
@@ -280,6 +284,10 @@ blockquote span::before {
 
 .section-content h3::before {
     content: counter(titleList) '. ';
+}
+
+.section-content #etiquetas {
+    margin-block-start: 32px;
 }
 
 /* .section-content h3::after {

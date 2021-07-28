@@ -195,6 +195,13 @@ blockquote span::before {
     display: none;
 }
 
+#google-chrome + p > span, 
+#visual-studio + p > span,
+#figma + p > span {
+    font-weight: bold;
+    font-style: italic;
+}
+
 .main-content {
     padding-inline: 16px;
 }
@@ -257,6 +264,7 @@ blockquote span::before {
     position: relative;
     left: 0;
     bottom: 0;
+    margin-block-start: 8px;
 }
 
 /* .slider {
