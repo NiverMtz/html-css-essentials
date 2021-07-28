@@ -12,6 +12,11 @@ document.getElementById("btn-b").addEventListener("click", displayDateB);
 document.getElementById("btn-c").addEventListener("click", displayDateC);
 document.getElementById("btn-d").addEventListener("click", displayDateD);
 document.getElementById("btn-e").addEventListener("click", displayDateE);
+document.getElementById("btn-a-2").addEventListener("click", displayDateA);
+document.getElementById("btn-b-2").addEventListener("click", displayDateB);
+document.getElementById("btn-c-2").addEventListener("click", displayDateC);
+document.getElementById("btn-d-2").addEventListener("click", displayDateD);
+document.getElementById("btn-e-2").addEventListener("click", displayDateE);
 
 function displayDateA() {
     styles.setAttribute("href", "./css/styles-physical.css")

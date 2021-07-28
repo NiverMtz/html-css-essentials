@@ -36,7 +36,7 @@
   <body>
     <div class="hero"></div>
     <!-- Menú de Navegación -->
-    <div class="header">
+    <div id="header1" class="header">
       <div class="wrapper">
         <div class="header-content">
           <header>
@@ -85,6 +85,48 @@
             aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2
             aprenderás de componentes y en 3 sobre layouts.
           </p>
+
+          <div id="header2" class="header">
+            <div class="wrapper">
+              <div class="header-content">
+                <header>
+                  <p>VARIANTES DEL PROYECTO</p>
+                  <ul>
+                    <li><button id="btn-a-2">Nemium A</button></li>
+                    <li><button id="btn-b-2">Nemium B</button></li>
+                    <li><button id="btn-c-2">Nemium C</button></li>
+                    <li><button id="btn-d-2">Nemium D</button></li>
+                    <li><button id="btn-e-2">Nemium E</button></li>
+                  </ul>
+                  <nav>
+                    <p>CONTENIDO</p>
+                    <div class="details">
+                      <details>
+                        <summary>Setup</summary>
+                        <ol>
+                          <li><a href="#google-chrome">Google Chrome</a></li>
+                          <li><a href="#visual-studio">Visual Studio Code</a></li>
+                          <li><a href="#figma">Figma</a></li>
+                          <li><a href="#github">GitHub</a></li>
+                        </ol>
+                      </details>
+                      <details>
+                        <summary>Conceptos esenciales del Desarrollo Web</summary>
+                        <ol>
+                          <li><a href="#que-es-html">Qué es HTML</a></li>
+                          <li><a href="#etiquetas">Etiquetas</a></li>
+                          <li><a href="#dom">DOM</a></li>
+                          <li><a href="#semantica">Semántica</a></li>
+                          <li><a href="#atributos">Atributos</a></li>
+                          <li><a href="#css">CSS</a></li>
+                        </ol>
+                      </details>
+                    </div>
+                  </nav>
+                </header>
+              </div>
+            </div>
+          </div>
           <hr>
     
           <!-- Primera Sección: Setup -->
@@ -92,43 +134,43 @@
             <h2>Setup</h2>
             <img
             id = "img1"
-              src="./images/google-chrome-light.png"
+              src="./images/google-chrome.png"
               alt="Logo de Google Chrome"
               title="Logo de Google Chrome"
             />
             <h3 id="google-chrome">Google Chrome</h3>
             <p>
-              Chrome va a ser el navegador que utilizaremos en el curso por su extenso
+              Chrome va a ser <span> el navegador que utilizaremos en el curso </span> por su extenso
               soporte de nuevos estándares y herramientas de desarrollo avanzadas y de
               amigable uso.
             </p>
             <img
             id = "img2"
-              src="./images/visual-studio-code-light.png"
+              src="./images/visual-studio-code.png"
               alt="Logo de Visual Studio Code"
               title="Logo de Visual Studio Code"
             />
             <h3 id="visual-studio">Visual Studio Code</h3>
             <p>
-              Visual Studio Code es el editor de texto más popular y potente del mercado
+              Visual Studio Code es el <span>editor de texto más popular y potente del mercado</span>
               actualmente, su fácil uso y la capacidad de extenderlo por medio de
               plugins lo hace el complemento perfecto para cualquier programador sin
               importar el lenguaje en el que se desemvuelva.
             </p>
             <img 
             id = "img3"
-            src="./images/figma-light.png" 
+            src="./images/figma.png" 
             alt="Logo de Figma" 
             title="Logo de Figma" />
             <h3 id="figma">Figma</h3>
             <p>
               Figma es una la herramienta más popular en la actualidad para entregar
-              diseños a los desarrolladores para su implementación por su fácil uso
+              diseños a los desarrolladores para su implementación por su <span>fácil uso</span>
               porque puede ser usado directamente desde el navegador.
             </p>
             <img
             id = "img4"
-              src="./images/github-light.png"
+              src="./images/github.png"
               alt="Logo de GitHub"
               title="Logo de GitHub"
             />
@@ -293,9 +335,9 @@
               </div>
             </div>
           </div>
-          <p>
+          <p id="p-email">
             Sí tienes alguna pregunta escríbeme a
-            <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+            <a id="email-leo" href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
           </p>
           <div class="section-content">
             <form action="#" class="form">
@@ -304,7 +346,7 @@
               <input required type="email" placeholder="Correo Electrónico" name="" id="">
               <input type="submit" value="Suscribirme">
             </form>
-          </div>
+          </div> 
         </div>
       </div>
     </main>
@@ -314,9 +356,9 @@
         <div class="footer-content">
           <p>© Niver Mtz 2021</p>
           <div class="footer-icons">
-            <img id="icon1" src="./images/facebook.png" alt="facebook">
-            <img id="icon2" src="./images/instagram.png" alt="instagram">
-            <img id="icon3" src="./images/twitter.png" alt="twitter">
+            <img id="icon1" src="./images/facebook-light.png" alt="facebook">
+            <img id="icon2" src="./images/instagram-light.png" alt="instagram">
+            <img id="icon3" src="./images/twitter-light.png  " alt="twitter">
           </div>
         </div>
       </div>
