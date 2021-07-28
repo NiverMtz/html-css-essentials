@@ -127,7 +127,7 @@ a {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 24px;
     font-weight: normal;
     margin-top: 64px;
     margin-bottom: 16px;
@@ -191,6 +191,10 @@ blockquote span::before {
     position: relative;
 } */
 
+#header2 {
+    display: none;
+}
+
 .main-content {
     padding-inline: 16px;
 }
@@ -249,14 +253,10 @@ blockquote span::before {
     width: 80px;
     height: 4px;
     background-color: var(--gray30);
-    display: inline-block;
-    position: absolute;
+    display: block;
+    position: relative;
     left: 0;
     bottom: 0;
-}
-
-ent {
-    padding-inline: 16px;
 }
 
 /* .slider {

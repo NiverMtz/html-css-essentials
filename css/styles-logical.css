@@ -120,7 +120,7 @@ a {
 } */
 
 h1 {
-    font-size: 40px;
+    font-size: 24px;
     margin-block-start: 20px;
     margin-block-end: 16px;
 }
@@ -164,6 +164,10 @@ blockquote p {
 
 p {
     color: var(--white20);
+}
+
+#header2 {
+    display: none;
 }
 
 .hero {
